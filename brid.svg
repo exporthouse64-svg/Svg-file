@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1c29" />
+      <stop offset="100%" stop-color="#08090d" />
+    </radialGradient>
+
+    <!-- Wing Teal Gradient -->
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00bcd4" />
+      <stop offset="100%" stop-color="#005b66" />
+    </linearGradient>
+
+    <!-- Gold/Orange Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb300" />
+      <stop offset="100%" stop-color="#e65100" />
+    </linearGradient>
+
+    <!-- Head Crown Gradient -->
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffa000" />
+      <stop offset="50%" stop-color="#ffd54f" />
+      <stop offset="100%" stop-color="#ff8f00" />
+    </linearGradient>
+
+    <!-- Shadow Effect -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="800" height="800" fill="url(#bgGrad)" />
+
+  <g filter="url(#shadow)">
+    <!-- Tail Feathers -->
+    <polygon points="400,480 330,690 400,720 470,690" fill="url(#goldGrad)" />
+    <polygon points="400,480 360,650 400,680 440,650" fill="#ff8f00" />
+
+    <!-- Left Wing -->
+    <path d="M 350,380 L 140,250 L 210,380 L 120,330 L 230,460 L 160,420 L 280,520 L 370,450 Z" fill="url(#tealGrad)" stroke="#00363a" stroke-width="3" />
+
+    <!-- Right Wing -->
+    <path d="M 450,380 L 660,250 L 590,380 L 680,330 L 570,460 L 640,420 L 520,520 L 430,450 Z" fill="url(#tealGrad)" stroke="#00363a" stroke-width="3" />
+
+    <!-- Body Shield Base -->
+    <path d="M 350,380 Q 400,320 450,380 L 480,510 Q 400,630 320,510 Z" fill="#1e2530" stroke="url(#goldGrad)" stroke-width="8" />
+
+    <!-- Body Emblem (Diamonds) -->
+    <polygon points="400,390 435,450 400,510 365,450" fill="url(#goldGrad)" />
+    <polygon points="400,500 425,545 400,590 375,545" fill="url(#goldGrad)" />
+
+    <!-- Head Base -->
+    <path d="M 335,270 L 465,270 L 450,380 L 350,380 Z" fill="#e0e0e0" />
+
+    <!-- Crown / Crest Feathers -->
+    <polygon points="400,180 425,270 375,270" fill="url(#crownGrad)" />
+    <polygon points="350,210 380,270 330,270" fill="url(#crownGrad)" />
+    <polygon points="450,210 470,270 420,270" fill="url(#crownGrad)" />
+
+    <!-- Beak -->
+    <polygon points="400,390 355,270 445,270" fill="url(#goldGrad)" />
+    <polygon points="400,390 400,270 445,270" fill="#ff8f00" />
+
+    <!-- Angry Eyes -->
+    <!-- Left Eye -->
+    <polygon points="345,250 395,270 355,280" fill="#d32f2f" />
+    <polygon points="350,258 385,270 360,275" fill="#000000" />
+    <!-- Right Eye -->
+    <polygon points="455,250 405,270 445,280" fill="#d32f2f" />
+    <polygon points="450,258 415,270 440,275" fill="#000000" />
+  </g>
+</svg>
+    
